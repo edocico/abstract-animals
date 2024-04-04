@@ -2,10 +2,13 @@ package org.experis.animals;
 
 public class Dog extends Animal{
 
+    // constructor
 
     public Dog(String name) {
         super(name);
     }
+
+    // methods
 
     @Override
     public void verso() {
@@ -17,8 +20,5 @@ public class Dog extends Animal{
         System.out.println("meat");
     }
 
-    @Override
-    public String toString() {
-        return super.toString();
-    }
+
 }

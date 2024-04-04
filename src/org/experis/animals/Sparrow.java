@@ -1,11 +1,14 @@
 package org.experis.animals;
 
-public class Sparrow extends Animal{
+public class Sparrow extends Animal implements CanFly{
 
+    // constructor
 
     public Sparrow(String name) {
         super(name);
     }
+
+    // methods
 
     @Override
     public void verso() {
@@ -17,8 +20,9 @@ public class Sparrow extends Animal{
         System.out.println("fruit");
     }
 
+
     @Override
-    public String toString() {
-        return super.toString();
+    public void fly() {
+        System.out.println("I'm " + getName() + " and I'm Flying !!");
     }
 }

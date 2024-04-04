@@ -1,11 +1,14 @@
 package org.experis.animals;
 
-public class Dolphin extends Animal{
+public class Dolphin extends Animal implements CanSwim{
 
+    // constructor
 
     public Dolphin(String name) {
         super(name);
     }
+
+    // methods
 
     @Override
     public void verso() {
@@ -17,8 +20,9 @@ public class Dolphin extends Animal{
         System.out.println("fish");
     }
 
+
     @Override
-    public String toString() {
-        return super.toString();
+    public void swim() {
+        System.out.println("I'm " + getName() + " and I'm Swimming !!");
     }
 }
